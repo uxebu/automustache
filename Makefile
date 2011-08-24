@@ -6,8 +6,8 @@ encode_mustache:
 	/bin/echo -n "';" >> src/mustache.js
 
 compile_js:
-	closure --js face.js \
-			--js ccv.js \
-			--js mustache.js \
-			--js automustache.js \
+	closure --js lib/face.js \
+			--js lib/ccv.js \
+			--js src/mustache.js \
+			--js src/automustache.js \
 			--js_output_file all.min.js
